@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head><script src="./js/first-visit-gate.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+  (function() {
+    const savedTheme = localStorage.getItem('site-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+</script>
+<title data-i18n-page-title="meta.homeTitle">Munendra Singh - Web Developer</title>
+<!-- Standard Meta Description & Canonical -->
+<meta content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions." data-i18n-meta-desc="meta.defaultDescription" name="description"/>
+<link href="https://mswebsolutions.online/" rel="canonical"/>
+<!-- Open Graph Meta Tags (WhatsApp, Facebook, LinkedIn) -->
+<meta content="website" property="og:type"/>
+<meta content="https://mswebsolutions.online/" property="og:url"/>
+<meta content="Munendra Singh - Web Solutions" property="og:title"/>
+<meta content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions." property="og:description"/>
+<meta content="https://mswebsolutions.online/language/assets/card.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Munendra Singh - Web Solutions" property="og:site_name"/>
+<!-- Twitter Card Meta Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://mswebsolutions.online/" name="twitter:url"/>
+<meta content="Munendra Singh - Web Solutions" name="twitter:title"/>
+<meta content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions." name="twitter:description"/>
+<meta content="https://mswebsolutions.online/language/assets/card.png" name="twitter:image"/>
+<!-- Favicon & Apple Touch Icon -->
+<link href="./language/assets/logo-1.png" rel="icon" type="image/png"/>
+<link href="./language/assets/logo-1.png" rel="apple-touch-icon"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Preconnect external CDNs -->
+<link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+<link crossorigin="" href="https://images.unsplash.com" rel="preconnect"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="./css/home.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- SMART HEADER & NAVBAR -->
+<header id="site-header">
+<div class="container">
+<nav>
+<!-- Left: Logo -->
+<div class="logo">
+<i class="fa-solid fa-code"></i>
+<div class="logo-text">
+<h3 data-i18n="common.brand.name">MUNENDRA SINGH</h3>
+<span data-i18n="common.brand.tagline">Web Solutions</span>
+</div>
+</div>
+<!-- Center: Navigation Links -->
+<ul class="nav-links" id="nav-menu">
+<li><a class="active" data-i18n="common.nav.home" href="home.html">Home</a></li>
+<li><a data-i18n="common.nav.services" href="./pages/service.html">Services</a></li>
+<li><a data-i18n="common.nav.projects" href="./pages/project.html">Projects</a></li>
+<li><a data-i18n="common.nav.about" href="./pages/about_me.html">About</a></li>
+<li><a data-i18n="common.nav.pricing" href="./pages/packages.html">Pricing</a></li>
+<li><a data-i18n="common.nav.contact" href="./pages/contact.html">Contact</a></li>
+</ul>
+<!-- Right: Buttons (Let's Talk & Theme Switcher) -->
+<div class="nav-right-container">
+<!-- Mobile Services Button (Image ke mutabiq) -->
+<a class="mobile-next_page-btn" data-i18n="common.nav.services" href="./pages/service.html">Services <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem;"></i></a>
+<a class="btn-talk" data-i18n="common.nav.letsTalk" href="./pages/contact.html"><i class="fa-regular fa-comments"></i> Let's Talk</a>
+<button aria-label="Toggle Theme" class="theme-toggle-btn" id="theme-toggle">
+<i class="fa-solid fa-moon"></i>
+</button>
+<!-- Hamburger Button (Mobile III Icon) -->
+<button aria-label="Toggle Menu" class="hamburger" id="hamburger-btn">
+<i class="fa-solid fa-bars"></i>
+</button>
+<img alt="Logo" class="mobile-nav-logo" decoding="async" src="./language/assets/logo-1.png"/>
+</div>
+</nav>
+</div>
+</header>
+<!-- HERO SECTION -->
+<section class="hero-section">
+<div class="container">
+<div class="hero-grid">
+<div class="hero-left">
+<div class="hero-badge" data-i18n="home.hero.badge"><span class="dot"></span> Modern Websites. Better Business.</div>
+<h1 class="hero-title" data-i18n="home.hero.title">
+                        I Build Modern Websites That Help Your Business <span>Grow Online</span>
+</h1>
+<p class="hero-desc" data-i18n="home.hero.desc">
+                        I design and develop fast, responsive and user-friendly websites for local businesses, shops, professionals and personal brands.
+                    </p>
+<div class="hero-btns">
+<a class="btn-primary" data-i18n="home.hero.startProject" href="https://wa.me/919105523282" target="_blank"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+<a class="btn-secondary" data-i18n="home.hero.viewWork" href="./pages/project.html">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+<div class="trust-box">
+<div class="avatar-group">
+<img alt="Client" decoding="async" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&amp;auto=format&amp;fit=crop&amp;q=80"/>
+<img alt="Client" decoding="async" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&amp;auto=format&amp;fit=crop&amp;q=80"/>
+<img alt="Client" decoding="async" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&amp;auto=format&amp;fit=crop&amp;q=80"/>
+</div>
+<div class="trust-text" data-i18n="home.hero.trustedBy">
+                            Trusted by small businesses<br/>and professionals
+                        </div>
+</div>
+</div>
+<!-- Hero Mockups Display -->
+<div class="hero-image-container">
+<div class="mockup-wrapper">
+<div class="laptop-screen">
+<div style="height: 180px; border-radius: 4px; overflow: hidden;">
+<img alt="Modern Web Development" decoding="async" src="./assets/image.png" style="width: 100%; height: 100%; object-fit: cover; display: block;"/>
+</div>
+</div>
+<div class="phone-screen">
+<div style="background: #0f172a; color: white; padding: 10px; text-align: center; font-size: 0.6rem;">
+<p data-i18n="home.hero.mockupDesigner" style="margin-top: 10px;">Hello, I'm Designer</p>
+<div style="width: 30px; height: 30px; background: #38bdf8; border-radius: 50%; margin: 8px auto;"></div>
+</div>
+</div>
+<div class="floating-card">
+<p data-i18n="home.hero.mockupFood" style="font-size: 0.65rem; font-weight: 700;">Fresh &amp; Healthy Food For You</p>
+<div style="display: flex; gap: 4px; margin-top: 6px;">
+<div style="background: rgba(37, 99, 235, 0.1); width: 33%; height: 25px; border-radius: 3px;"></div>
+<div style="background: rgba(37, 99, 235, 0.1); width: 33%; height: 25px; border-radius: 3px;"></div>
+<div style="background: rgba(37, 99, 235, 0.1); width: 33%; height: 25px; border-radius: 3px;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CLICKABLE WHATSAPP CTA -->
+<a class="whatsapp-float" href="https://wa.me/919105523282" target="_blank">
+<i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+<span data-i18n="common.whatsapp.floatText">Chat on WhatsApp</span>
+</a>
+<!-- WHAT I CAN BUILD SECTION -->
+<section class="services-section">
+<div class="container">
+<span class="section-tag" data-i18n="home.services.tag">WHAT I CAN BUILD</span>
+<h2 class="section-title" data-i18n="home.services.title">Websites For Every Need</h2>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon icon-blue">
+<i class="fa-solid fa-store"></i>
+</div>
+<h4 data-i18n="home.services.localBizTitle">Local Business Websites</h4>
+<p data-i18n="home.services.localBizDesc">Perfect websites for shops, services, salons, gyms and local business.</p>
+</div>
+<div class="service-card">
+<div class="service-icon icon-purple">
+<i class="fa-solid fa-user"></i>
+</div>
+<h4 data-i18n="home.services.personalTitle">Personal Websites</h4>
+<p data-i18n="home.services.personalDesc">Create your personal brand with a professional and modern website.</p>
+</div>
+<div class="service-card">
+<div class="service-icon icon-green">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<h4 data-i18n="home.services.portfolioTitle">Portfolio Websites</h4>
+<p data-i18n="home.services.portfolioDesc">Showcase your skills, projects and achievements in the best way.</p>
+</div>
+<div class="service-card">
+<div class="service-icon icon-orange">
+<i class="fa-solid fa-building"></i>
+</div>
+<h4 data-i18n="home.services.bizTitle">Business Websites</h4>
+<p data-i18n="home.services.bizDesc">Professional websites for small businesses and startups.</p>
+</div>
+<div class="service-card">
+<div class="service-icon icon-red">
+<i class="fa-solid fa-utensils"></i>
+</div>
+<h4 data-i18n="home.services.restaurantTitle">Restaurant Websites</h4>
+<p data-i18n="home.services.restaurantDesc">Menus, gallery, location, online enquiry and more for restaurants.</p>
+</div>
+<div class="service-card">
+<div class="service-icon icon-cyan">
+<i class="fa-solid fa-rocket"></i>
+</div>
+<h4 data-i18n="home.services.landingTitle">Landing Pages</h4>
+<p data-i18n="home.services.landingDesc">High-converting landing pages for your products and services.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE ME SECTION -->
+<section class="features-section">
+<div class="container">
+<span class="section-tag" data-i18n="home.features.tag">WHY CHOOSE ME</span>
+<h2 class="section-title" data-i18n="home.features.title">I Focus On Quality &amp; Results</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon f-icon-1">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<h4 data-i18n="home.features.modernDesignTitle">Modern Design</h4>
+<p data-i18n="home.features.modernDesignDesc">Clean, professional and attractive designs that represent your brand.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon f-icon-2">
+<i class="fa-solid fa-mobile-screen-button"></i>
+</div>
+<h4 data-i18n="home.features.mobileFriendlyTitle">Mobile Friendly</h4>
+<p data-i18n="home.features.mobileFriendlyDesc">100% responsive websites that work perfectly on all devices.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon f-icon-3">
+<i class="fa-solid fa-gauge-high"></i>
+</div>
+<h4 data-i18n="home.features.fastOptimizedTitle">Fast &amp; Optimized</h4>
+<p data-i18n="home.features.fastOptimizedDesc">Lightweight, optimized and fast-loading websites for better performance.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon f-icon-4">
+<i class="fa-solid fa-sliders"></i>
+</div>
+<h4 data-i18n="home.features.easyToUseTitle">Easy to Use</h4>
+<p data-i18n="home.features.easyToUseDesc">User-friendly websites easy to navigate for your customers.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon f-icon-5">
+<i class="fa-solid fa-code"></i>
+</div>
+<h4 data-i18n="home.features.customBuiltTitle">Custom Built</h4>
+<p data-i18n="home.features.customBuiltDesc">Every website is custom built according to your requirements.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon f-icon-6">
+<i class="fa-solid fa-microchip"></i>
+</div>
+<h4 data-i18n="home.features.aiWorkflowTitle">AI-Assisted Workflow</h4>
+<p data-i18n="home.features.aiWorkflowDesc">Using modern AI tools to work faster and deliver better results.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- RECENT PROJECTS SECTION -->
+<section class="projects-section">
+<div class="container">
+<div class="projects-header-grid">
+<div class="projects-left-title">
+<h5 data-i18n="home.projects.tag">RECENT WORK</h5>
+<h2 data-i18n="home.projects.title">Some Of My Recent Projects</h2>
+<a class="btn-outline-project" data-i18n="home.projects.viewAll" href="./pages/project.html?filter=all">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+<div class="projects-cards-container">
+<!-- Project 1 -->
+<div class="project-card">
+<div class="project-img" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&amp;auto=format&amp;fit=crop&amp;q=80'); padding: 12px; color: white;">
+<span data-i18n="home.projects.bakeryBadge" style="font-size: 0.65rem; font-weight: bold; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 3px;">BAKERY</span>
+<p data-i18n="home.projects.bakeryTagline" style="font-size: 0.85rem; font-weight: bold; margin-top: 30px; color: #ffffff;">The Best Bakery In Your Town</p>
+</div>
+<div class="project-info">
+<h4 data-i18n="home.projects.bakeryTitle">Bakery Website</h4>
+<p data-i18n="home.projects.bakeryCategory">Local Business</p>
+<div class="tags">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card">
+<div class="project-img" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&amp;auto=format&amp;fit=crop&amp;q=80'); padding: 12px; color: white;">
+<span data-i18n="home.projects.gymBadge" style="font-size: 0.65rem; font-weight: bold; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 3px;">GYM</span>
+<p data-i18n="home.projects.gymTagline" style="font-size: 0.85rem; font-weight: bold; margin-top: 30px; color: #ffffff;">Push Your Limits Grow Stronger</p>
+</div>
+<div class="project-info">
+<h4 data-i18n="home.projects.gymTitle">Gym Website</h4>
+<p data-i18n="home.projects.gymCategory">Local Business</p>
+<div class="tags">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card">
+<div class="project-img" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=400&amp;auto=format&amp;fit=crop&amp;q=80'); padding: 12px; color: white;">
+<span data-i18n="home.projects.portfolioBadge" style="font-size: 0.65rem; font-weight: bold; background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 3px;">PORTFOLIO</span>
+<p data-i18n="home.projects.portfolioTagline" style="font-size: 0.85rem; font-weight: bold; margin-top: 30px; color: #ffffff;">Hello, I'm Web Developer</p>
+</div>
+<div class="project-info">
+<h4 data-i18n="home.projects.portfolioTitle">Portfolio Website</h4>
+<p data-i18n="home.projects.portfolioCategory">Personal</p>
+<div class="tags">
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+</div>
+</div>
+</div>
+<div class="arrow-next-btn">
+<a class="btn-outline-project" href="./pages/project.html?filter=all">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MY PROCESS SECTION -->
+<section class="process-section">
+<div class="container">
+<span class="section-tag" data-i18n="home.process.tag">MY PROCESS</span>
+<h2 class="section-title" data-i18n="home.process.title">From Idea to Website</h2>
+<div class="process-steps">
+<!-- Center Colorful Line -->
+<div class="process-line"></div>
+<!-- Step 1 -->
+<div class="step-item step-1">
+<div class="step-icon">
+<i class="fa-regular fa-comment-dots"></i>
+</div>
+<h4 data-i18n="home.process.step1Title">01. Tell Me Your Idea</h4>
+<p data-i18n="home.process.step1Desc">You share your requirements, business details and goals.</p>
+</div>
+<!-- Step 2 -->
+<div class="step-item step-2">
+<div class="step-icon">
+<i class="fa-solid fa-pen-nib"></i>
+</div>
+<h4 data-i18n="home.process.step2Title">02. Design</h4>
+<p data-i18n="home.process.step2Desc">I create a modern design that represents your brand.</p>
+</div>
+<!-- Step 3 -->
+<div class="step-item step-3">
+<div class="step-icon">
+<i class="fa-solid fa-code"></i>
+</div>
+<h4 data-i18n="home.process.step3Title">03. Development</h4>
+<p data-i18n="home.process.step3Desc">I convert the design into a responsive website.</p>
+</div>
+<!-- Step 4 -->
+<div class="step-item step-4">
+<div class="step-icon">
+<i class="fa-regular fa-eye"></i>
+</div>
+<h4 data-i18n="home.process.step4Title">04. Review</h4>
+<p data-i18n="home.process.step4Desc">You review the website and request any changes.</p>
+</div>
+<!-- Step 5 -->
+<div class="step-item step-5">
+<div class="step-icon">
+<i class="fa-solid fa-rocket"></i>
+</div>
+<h4 data-i18n="home.process.step5Title">05. Launch</h4>
+<p data-i18n="home.process.step5Desc">Your website goes live and is ready for your customers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA BANNER SECTION -->
+<section class="cta-section">
+<div class="container">
+<div class="cta-card">
+<div class="cta-main">
+<div class="cta-left">
+<div class="cta-icon-box">
+<i class="fa-solid fa-display"></i>
+</div>
+<div class="cta-text">
+<h3 data-i18n="home.cta.title">Have an Idea for a Website?</h3>
+<p data-i18n="home.cta.desc">Let's turn your idea into a professional online presence.</p>
+</div>
+</div>
+<a class="btn-primary" data-i18n="home.cta.startBtn" href="https://wa.me/919105523282" target="_blank"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+</div>
+<div class="cta-features">
+<div class="cta-feature-item">
+<i class="fa-solid fa-truck-fast"></i>
+<div>
+<h5 data-i18n="home.cta.quickDeliveryTitle">Quick Delivery</h5>
+<p data-i18n="home.cta.quickDeliveryDesc">On-time delivery guaranteed</p>
+</div>
+</div>
+<div class="cta-feature-item">
+<i class="fa-regular fa-clock"></i>
+<div>
+<h5 data-i18n="home.cta.supportTitle">24/7 Support</h5>
+<p data-i18n="home.cta.supportDesc">I'm always here to help you</p>
+</div>
+</div>
+<div class="cta-feature-item">
+<i class="fa-regular fa-star"></i>
+<div>
+<h5 data-i18n="home.cta.satisfactionTitle">Satisfaction Guarantee</h5>
+<p data-i18n="home.cta.satisfactionDesc">100% client satisfaction</p>
+</div>
+</div>
+<div class="cta-feature-item">
+<i class="fa-solid fa-shield-halved"></i>
+<div>
+<h5 data-i18n="home.cta.secureTitle">Secure &amp; Reliable</h5>
+<p data-i18n="home.cta.secureDesc">Safe, secure and reliable websites</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STRICT ALWAYS BLACK FOOTER SECTION -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo">
+<i class="fa-solid fa-code"></i>
+<div class="logo-text">
+<h3 data-i18n="common.brand.name" style="color: #ffffff;">MUNENDRA SINGH</h3>
+<span data-i18n="common.brand.tagline">Web Solutions</span>
+</div>
+</div>
+<p data-i18n="common.footer.brandDesc">I build modern, responsive and user-friendly websites that help businesses and individuals grow online.</p>
+<div class="social-icons">
+<a href="https://wa.me/919105523282" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1E47B3eucZ/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/munendra_tcm?igsh=c3F6aDUxYTVlNmhz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/munendra-singh-7706443b3/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://github.com/munendra5singh" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a href="https://www.youtube.com/@munendra-tcm" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</div>
+<div class="footer-column">
+<h4 data-i18n="common.footer.quickLinksTitle">Quick Links</h4>
+<ul>
+<li><a data-i18n="common.footer.home" href="home.html" style="color: #3b82f6 !important;">Home</a></li>
+<li><a data-i18n="common.footer.services" href="./pages/service.html">Services</a></li>
+<li><a data-i18n="common.footer.projects" href="./pages/project.html">Projects</a></li>
+<li><a data-i18n="common.footer.aboutMe" href="./pages/about_me.html">About Me</a></li>
+<li><a data-i18n="common.footer.packages" href="./pages/packages.html">Packages</a></li>
+<li><a data-i18n="common.footer.contact" href="./pages/contact.html">Contact</a></li>
+<li><a data-i18n="common.footer.privacyTerms" href="./pages/Privacy.html">Privacy &amp; Terms</a></li>
+<li><span class="footer-lang-item"><span data-lang-current-name>English</span> · <a data-i18n="common.footer.changeLanguage" href="./index.html?change=true&returnUrl=home.html" onmouseout="this.style.removeProperty('color')" onmouseover="this.style.setProperty('color','#22c55e','important')">Change Language</a></span></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4 data-i18n="common.footer.myServicesTitle">My Services</h4>
+<ul>
+<li><a data-i18n="common.footer.allProjects" href="./pages/project.html?filter=all">All Projects</a></li>
+<li><a data-i18n="common.footer.businessWebsites" href="./pages/project.html?filter=business">Business Websites</a></li>
+<li><a data-i18n="common.footer.personalWebsites" href="./pages/project.html?filter=personal">Personal Websites</a></li>
+<li><a data-i18n="common.footer.portfolioWebsites" href="./pages/project.html?filter=portfolio">Portfolio Websites</a></li>
+<li><a data-i18n="common.footer.landingPages" href="./pages/project.html?filter=landing">Landing Pages</a></li>
+<li><a data-i18n="common.footer.websiteRedesign" href="./pages/project.html?filter=others">Website Redesign</a></li>
+<li><a data-i18n="common.footer.ecommerceWebsites" href="./pages/project.html?filter=others">E-commerce Websites</a></li>
+<li><a data-i18n="common.footer.others" href="./pages/project.html?filter=others">Others</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4 data-i18n="common.footer.contactMeTitle">Contact Me</h4>
+<ul class="contact-list">
+<li><i class="fa-solid fa-phone"></i> +91 9105523282</li>
+<li><i class="fa-regular fa-envelope"></i> singh2005munendra@gmail.com</li>
+<li><i class="fa-solid fa-location-dot"></i><span data-i18n="common.footer.country">India</span></li>
+<li><i class="fa-brands fa-whatsapp"></i> <a data-i18n="common.footer.chatWhatsApp" href="https://wa.me/919105523282" style="color: #3b82f6 !important;" target="_blank">Chat on WhatsApp</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p data-i18n="common.footer.copyright">© 2025 Munendra Singh. All rights reserved.</p>
+<div class="footer-bottom-links">
+<a data-i18n="common.footer.privacyPolicy" href="./pages/Privacy.html" style="color: #94a3b8;">Privacy Policy</a>
+<span>|</span>
+<a data-i18n="common.footer.termsConditions" href="./pages/Privacy.html" style="color: #94a3b8;">Terms &amp; Conditions</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- SCROLL TO TOP BUTTON -->
+<button aria-label="Scroll to top" id="scrollTopBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- INTERACTIVITY SCRIPT -->
+<script src="./js/dictionary/english.js" defer></script><script src="./js/dictionary/hindi.js" defer></script><script src="./js/dictionary/hinglish.js" defer></script><script src="./js/language.js" defer></script><script src="./js/master.js" defer></script><script src="./js/mobile-nav.js" defer></script></body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer - Munendra Singh</title>
+
+    <script>
+      (function() {
+        // Theme load logic
+        const savedTheme = localStorage.getItem('site-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        // Saved Language Check (Auto Redirect to Unified Home Page only if NOT changing language)
+        const urlParams = new URLSearchParams(window.location.search);
+        const isChangeLang = urlParams.get('change') === 'true' || 
+                             urlParams.get('change_language') === 'true' ||
+                             !!urlParams.get('returnUrl') ||
+                             !!urlParams.get('return');
+
+        if (!isChangeLang) {
+          const savedLang = localStorage.getItem('preferred-language');
+          if (savedLang) {
+            window.location.replace('./home.html');
+          }
+        }
+      })();
+    </script>
+
+    <!-- Standard Meta Description & Canonical -->
+    <meta name="description" content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions.">
+    <link rel="canonical" href="https://mswebsolutions.online/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mswebsolutions.online/">
+    <meta property="og:title" content="Munendra Singh - Web Solutions">
+    <meta property="og:description" content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions.">
+    <meta property="og:image" content="https://mswebsolutions.online/language/assets/card.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Munendra Singh - Web Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mswebsolutions.online/">
+    <meta name="twitter:title" content="Munendra Singh - Web Solutions">
+    <meta name="twitter:description" content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions.">
+    <meta name="twitter:image" content="https://mswebsolutions.online/language/assets/card.png">
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" href="./language/assets/logo-1.png">
+    <link rel="apple-touch-icon" href="./language/assets/logo-1.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./language/style.css">
+</head>
+<body>
+
+    <!-- Ambient Visual Elements -->
+    <div class="ambient-bg">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+    </div>
+
+    <!-- PREMIUM FLOATING DEVELOPER NAVBAR -->
+    <header id="site-header" class="animate-ready">
+        <nav>
+            <div class="logo">
+                <div class="logo-icon-wrapper">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="logo-text">
+                    <h3>MUNENDRA SINGH</h3>
+                    <span>Web Developer</span>
+                </div>
+            </div>
+
+            <div class="nav-status-badge">
+                <span class="status-dot"></span>
+                <span>AVAILABLE FOR PROJECTS</span>
+            </div>
+
+            <div class="nav-right-container">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <img src="./language/assets/logo-1.png" alt="Logo" class="mobile-nav-logo" decoding="async">
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO GATEWAY TITLE -->
+    <section class="gateway-hero">
+        <div class="container">
+            <div class="welcome-titles">
+                <h2 id="hero-welcome-en" class="animate-ready">WELCOME / <span id="hero-welcome-hi" class="hindi-text highlight-text">स्वागत है</span></h2>
+                <p id="hero-desc-en" class="welcome-subtext animate-ready">Modern websites for businesses, professionals & individuals.</p>
+                <p id="hero-desc-hi" class="welcome-subtext hindi-text animate-ready" style="font-size: 0.95rem; margin-top: 4px;">व्यवसायों, पेशेवरों और व्यक्तियों के लिए आधुनिक वेबसाइट।</p>
+            </div>
+
+            <div id="hero-prompt" class="language-prompt-box animate-ready">
+                <p>CHOOSE YOUR PREFERRED LANGUAGE / <span class="hindi-text">अपनी भाषा चुनें</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LANGUAGE CARDS SECTION -->
+    <section class="language-cards-section">
+        <div class="container">
+            <div class="cards-wrapper">
+                
+                <!-- 1. Hindi Card -->
+                <a href="./home.html" id="card-hindi" class="lang-card hindi-card animate-ready slide-left" data-lang="hi" role="button" tabindex="0">
+                    <div class="card-dots-matrix"></div>
+                    <div class="card-icon-box">
+                        <div class="indian-flag-emblem">
+                            <div class="flag-stripe stripe-saffron"></div>
+                            <div class="flag-stripe stripe-white">
+                                <div class="ashoka-wheel"></div>
+                            </div>
+                            <div class="flag-stripe stripe-green"></div>
+                        </div>
+                    </div>
+                    <div class="card-text-wrapper">
+                        <h3 class="card-heading hindi-text">हिंदी में<br class="desktop-br">आगे बढ़ें</h3>
+                        <p class="card-subname">Hindi</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right lang-card-chevron"></i>
+                    <span class="card-btn">
+                        <span class="hindi-text">आगे बढ़ें</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+                <!-- OR Divider 1 -->
+                <div class="or-divider hindi-text animate-ready">या</div>
+
+                <!-- 2. Hinglish Card -->
+                <a href="./home.html" id="card-hinglish" class="lang-card hinglish-card animate-ready" data-lang="hinglish" role="button" tabindex="0">
+                    <div class="card-dots-matrix"></div>
+                    <div class="card-icon-box">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div class="card-text-wrapper">
+                        <h3 class="card-heading">Hinglish Me<br class="desktop-br">Aage Badhein</h3>
+                        <p class="card-subname">Aasan Hindi / Hinglish</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right lang-card-chevron"></i>
+                    <span class="card-btn">
+                        <span>Aage Badhein</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+                <!-- OR Divider 2 -->
+                <div class="or-divider hindi-text animate-ready">या</div>
+
+                <!-- 3. English Card -->
+                <a href="./home.html" id="card-english" class="lang-card english-card animate-ready slide-right" data-lang="en" role="button" tabindex="0">
+                    <div class="card-dots-matrix"></div>
+                    <div class="card-icon-box">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="card-text-wrapper">
+                        <h3 class="card-heading">Continue in<br class="desktop-br">English</h3>
+                        <p class="card-subname">English</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right lang-card-chevron"></i>
+                    <span class="card-btn">
+                        <span>Continue</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE ME SECTION -->
+    <section id="features-section" class="features-section">
+        <div class="container">
+            <span class="section-tag scroll-reveal">WHY CHOOSE ME</span>
+            <h2 class="section-title scroll-reveal">I Focus On <span class="highlight-text">Quality & Results</span></h2>
+
+            <div class="features-grid">
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon f-icon-1"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h4>Modern Design</h4>
+                    <p>Clean, professional and attractive designs that represent your brand.</p>
+                </div>
+
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon f-icon-2"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h4>Mobile Friendly</h4>
+                    <p>100% responsive websites that work perfectly on all devices.</p>
+                </div>
+
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon f-icon-3"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h4>Fast & Optimized</h4>
+                    <p>Lightweight, optimized and fast-loading websites for better performance.</p>
+                </div>
+
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon f-icon-4"><i class="fa-solid fa-sliders"></i></div>
+                    <h4>Easy to Use</h4>
+                    <p>User-friendly websites easy to navigate for your customers.</p>
+                </div>
+
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon f-icon-5"><i class="fa-solid fa-code"></i></div>
+                    <h4>Custom Built</h4>
+                    <p>Every website is custom built according to your requirements.</p>
+                </div>
+
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon f-icon-6"><i class="fa-solid fa-microchip"></i></div>
+                    <h4>AI-Assisted Workflow</h4>
+                    <p>Using modern AI tools to work faster and deliver better results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY PROCESS SECTION -->
+    <section class="process-section">
+        <div class="container">
+            <span class="section-tag scroll-reveal">MY PROCESS</span>
+            <h2 class="section-title scroll-reveal">From <span class="highlight-text">Idea to Website</span></h2>
+
+            <div class="process-steps">
+                <div class="step-item step-1 scroll-reveal">
+                    <div class="step-icon"><i class="fa-regular fa-comment-dots"></i></div>
+                    <h4>01. Tell Me Your Idea</h4>
+                    <p>You share your requirements, business details and goals.</p>
+                </div>
+
+                <div class="step-item step-2 scroll-reveal">
+                    <div class="step-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h4>02. Design</h4>
+                    <p>I create a modern design that represents your brand.</p>
+                </div>
+
+                <div class="step-item step-3 scroll-reveal">
+                    <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+                    <h4>03. Development</h4>
+                    <p>I convert the design into a responsive website.</p>
+                </div>
+
+                <div class="step-item step-4 scroll-reveal">
+                    <div class="step-icon"><i class="fa-regular fa-eye"></i></div>
+                    <h4>04. Review</h4>
+                    <p>You review the website and request any changes.</p>
+                </div>
+
+                <div class="step-item step-5 scroll-reveal">
+                    <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <h4>05. Launch</h4>
+                    <p>Your website goes live and is ready for your customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOBILE CTA SECTION -->
+    <section class="cta-section scroll-reveal">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-rocket-box">
+                    <i class="fa-solid fa-rocket cta-rocket-icon"></i>
+                </div>
+                <div class="cta-content">
+                    <h3 class="cta-title">Ready to take your business<br>online with a professional website?</h3>
+                    <a href="https://wa.me/919105523282" target="_blank" class="cta-btn">
+                        <span>LET'S WORK TOGETHER</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM DEVELOPER FOOTER SECTION -->
+    <footer id="site-footer" class="scroll-reveal">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon-wrapper">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3 style="color: #ffffff;">MUNENDRA SINGH</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                    <p>Modern websites for businesses, professionals & individuals.</p>
+                </div>
+                <div class="social-icons-container">
+                    <span class="connect-label">Connect with me</span>
+                    <div class="social-icons-group">
+                        <a href="https://wa.me/919105523282" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/share/1E47B3eucZ/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/munendra_tcm?igsh=c3F6aDUxYTVlNmhz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/munendra-singh-7706443b3/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/munendra5singh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/@munendra-tcm" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Munendra Singh. All Rights Reserved.</p>
+                <div class="made-with-love">
+                    <span>Made with</span>
+                    <i class="fa-solid fa-heart"></i>
+                    <span>for better web experiences.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CLICKABLE WHATSAPP CTA -->
+    <a href="https://wa.me/919105523282" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+        <span>Chat on WhatsApp</span>
+    </a>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="./language/script.js" defer></script>
+</body>
+</html>

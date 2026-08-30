@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head><script src="../js/first-visit-gate.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+  (function() {
+    const savedTheme = localStorage.getItem('site-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+</script>
+<title data-i18n-page-title="meta.projectsTitle">Projects - Munendra Singh</title>
+<!-- Standard Meta Description & Canonical -->
+<meta content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions." data-i18n-meta-desc="meta.defaultDescription" name="description"/>
+<link href="https://mswebsolutions.online/" rel="canonical"/>
+<!-- Open Graph Meta Tags (WhatsApp, Facebook, LinkedIn, Instagram) -->
+<meta content="website" property="og:type"/>
+<meta content="https://mswebsolutions.online/" property="og:url"/>
+<meta content="Munendra Singh - Web Solutions" property="og:title"/>
+<meta content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions." property="og:description"/>
+<meta content="https://mswebsolutions.online/language/assets/card.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Munendra Singh - Web Solutions" property="og:site_name"/>
+<!-- Twitter Card Meta Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://mswebsolutions.online/" name="twitter:url"/>
+<meta content="Munendra Singh - Web Solutions" name="twitter:title"/>
+<meta content="Aapki digital pehchan ko naya mod dene ke liye professional website design, UX/UI development, aur modern web solutions." name="twitter:description"/>
+<meta content="https://mswebsolutions.online/language/assets/card.png" name="twitter:image"/>
+<!-- Favicon & Apple Touch Icon -->
+<link href="../language/assets/logo-1.png" rel="icon" type="image/png"/>
+<link href="../language/assets/logo-1.png" rel="apple-touch-icon"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Preconnect external CDNs -->
+<link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+<link crossorigin="" href="https://images.unsplash.com" rel="preconnect"/>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../css/project.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- SMART HEADER & NAVBAR -->
+<header id="site-header">
+<div class="container">
+<nav>
+<!-- Left: Logo -->
+<div class="logo">
+<i class="fa-solid fa-code"></i>
+<div class="logo-text">
+<h3 data-i18n="common.brand.name">MUNENDRA SINGH</h3>
+<span data-i18n="common.brand.tagline">Web Solutions</span>
+</div>
+</div>
+<!-- Center: Navigation Links -->
+<ul class="nav-links" id="nav-menu">
+<li><a data-i18n="common.nav.home" href="../home.html">Home</a></li>
+<li><a data-i18n="common.nav.services" href="./service.html">Services</a></li>
+<li><a class="active" data-i18n="common.nav.projects" href="./project.html">Projects</a></li>
+<li><a data-i18n="common.nav.about" href="./about_me.html">About</a></li>
+<li><a data-i18n="common.nav.pricing" href="./packages.html">Pricing</a></li>
+<li><a data-i18n="common.nav.contact" href="./contact.html">Contact</a></li>
+</ul>
+<!-- Right: Buttons -->
+<div class="nav-right-container">
+<!-- Mobile Services Button (Image ke mutabiq) -->
+<a class="mobile-next_page-btn" data-i18n="common.nav.mobileAbout" href="./about_me.html">About <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem;"></i></a>
+<a class="btn-talk" data-i18n="common.nav.letsTalk" href="contact.html"><i class="fa-regular fa-comments"></i> Let's Talk</a>
+<button aria-label="Toggle Theme" class="theme-toggle-btn" id="theme-toggle">
+<i class="fa-solid fa-moon"></i>
+</button>
+<!-- Hamburger Button (Mobile III Icon) -->
+<button aria-label="Toggle Menu" class="hamburger" id="hamburger-btn">
+<i class="fa-solid fa-bars"></i>
+</button>
+<img alt="Logo" class="mobile-nav-logo" decoding="async" src="../language/assets/logo-1.png"/>
+</div>
+</nav>
+</div>
+</header>
+<!-- HERO SECTION (MATCHED WITH INDEX.HTML) -->
+<section class="hero-section">
+<div class="container">
+<div class="hero-grid">
+<div class="hero-left">
+<div class="hero-badge" data-i18n="projects_page.hero.badge"><span class="dot"></span> PORTFOLIO</div>
+<h1 class="hero-title" data-i18n="projects_page.hero.title">
+                        Projects That Speak <span>Quality</span>
+</h1>
+<p class="hero-desc" data-i18n="projects_page.hero.desc">
+                        Here are some of the websites I've designed and developed for businesses, professionals and individuals.
+                    </p>
+<!-- Stats Cards -->
+<div class="stats-group">
+<div class="stat-card">
+<div class="stat-icon blue">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<div class="stat-info">
+<h4>15+</h4>
+<p>Projects Done</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon green">
+<i class="fa-regular fa-face-smile"></i>
+</div>
+<div class="stat-info">
+<h4>10+</h4>
+<p>Happy Clients</p>
+</div>
+</div>
+<div class="stat-card">
+<div class="stat-icon purple">
+<i class="fa-solid fa-rocket"></i>
+</div>
+<div class="stat-info">
+<h4>100%</h4>
+<p>Satisfaction</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Graphic Mockup -->
+<div class="hero-image-container">
+<div class="mockup-wrapper">
+<div class="laptop-screen">
+<div style="height: 180px; border-radius: 4px; overflow: hidden;">
+<img alt="Modern Web Development" decoding="async" src="../assets/image.png" style="width: 100%; height: 100%; object-fit: cover; display: block;"/>
+</div>
+</div>
+<div class="phone-screen">
+<div style="background: #0f172a; color: white; padding: 10px; font-size: 0.55rem;">
+<p style="font-weight: bold;">Organic Fresh Vegetables Delivered To You</p>
+</div>
+</div>
+<div class="floating-card">
+<p data-i18n="projects_page.hero.cardTitle" style="font-size: 0.65rem; font-weight: 700;">Transform Your Body, Transform Your Life</p>
+<p data-i18n="projects_page.hero.cardSub" style="font-size: 0.55rem; color: #64748b; margin-top: 4px;">Our Programs</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CLICKABLE WHATSAPP CTA -->
+<a class="whatsapp-float" href="https://wa.me/919105523282" target="_blank">
+<i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+<span>Chat on WhatsApp</span>
+</a>
+<!-- PROJECTS GALLERY SECTION -->
+<!-- PROJECTS GALLERY SECTION -->
+<section class="portfolio-section">
+<div class="container">
+<!-- Filter Tabs -->
+<div class="filter-tabs" id="project-filters">
+<button class="filter-btn active" onclick="filterProjects(event, 'all')">
+<i class="fa-solid fa-border-all"></i> All Projects
+            </button>
+<button class="filter-btn" onclick="filterProjects(event, 'business')">
+<i class="fa-solid fa-building"></i> Business
+            </button>
+<button class="filter-btn" onclick="filterProjects(event, 'personal')">
+<i class="fa-solid fa-user"></i> Personal
+            </button>
+<button class="filter-btn" onclick="filterProjects(event, 'portfolio')">
+<i class="fa-solid fa-briefcase"></i> Portfolio
+            </button>
+<button class="filter-btn" onclick="filterProjects(event, 'landing')">
+<i class="fa-solid fa-rocket"></i> Landing Pages
+            </button>
+<button class="filter-btn" onclick="filterProjects(event, 'others')">
+<i class="fa-solid fa-ellipsis"></i> Others
+            </button>
+</div>
+<!-- Projects Grid (Dynamically Populated by JavaScript) -->
+<div class="projects-grid"></div>
+</div>
+</section>
+<!-- CTA BANNER SECTION -->
+<section class="cta-section">
+<div class="container">
+<div class="cta-card">
+<div class="cta-left">
+<div class="cta-icon-box">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<div class="cta-text">
+<h3 data-i18n="projects_page.cta.title">Have a Project in Mind?</h3>
+<p data-i18n="projects_page.cta.desc">Let's work together and build something amazing for your business.</p>
+</div>
+</div>
+<div class="cta-buttons">
+<a class="btn-primary-cta" data-i18n="projects_page.cta.startBtn" href="https://wa.me/919105523282" target="_blank">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+<a class="btn-whatsapp-cta" data-i18n="projects_page.cta.chatBtn" href="https://wa.me/919105523282" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+<!-- STRICT ALWAYS BLACK FOOTER SECTION -->
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo">
+<i class="fa-solid fa-code"></i>
+<div class="logo-text">
+<h3 data-i18n="common.brand.name" style="color: #ffffff;">MUNENDRA SINGH</h3>
+<span data-i18n="common.brand.tagline">Web Solutions&lt;</span>
+</div>
+</div>
+<p data-i18n="common.footer.brandDesc">I design and develop modern, responsive and user-friendly websites for businesses, professionals and individuals.</p>
+<div class="social-icons">
+<a href="https://wa.me/919105523282" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1E47B3eucZ/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/munendra_tcm?igsh=c3F6aDUxYTVlNmhz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/munendra-singh-7706443b3/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://github.com/munendra5singh" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a href="https://www.youtube.com/@munendra-tcm" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</div>
+<div class="footer-column">
+<h4 data-i18n="common.footer.quickLinksTitle">Quick Links</h4>
+<ul>
+<li><a data-i18n="common.footer.home" href="../home.html">Home</a></li>
+<li><a data-i18n="common.footer.services" href="./service.html">Services</a></li>
+<li><a data-i18n="common.footer.projects" href="./project.html" style="color: #3b82f6 !important;">Projects</a></li>
+<li><a data-i18n="common.footer.aboutMe" href="./about_me.html">About</a></li>
+<li><a data-i18n="common.footer.packages" href="./packages.html">Pricing</a></li>
+<li><a data-i18n="common.footer.contact" href="./contact.html">Contact</a></li>
+<li><a data-i18n="common.footer.privacyTerms" href="./Privacy.html">Privacy &amp; Terms</a></li>
+<li><span class="footer-lang-item"><span data-lang-current-name>English</span> · <a data-i18n="common.footer.changeLanguage" href="../index.html?change=true&returnUrl=pages/project.html" onmouseout="this.style.removeProperty('color')" onmouseover="this.style.setProperty('color','#22c55e','important')">Change Language</a></span></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4 data-i18n="common.footer.myServicesTitle">My Services</h4>
+<ul>
+<li><a data-i18n="common.footer.allProjects" href="./project.html?filter=all" onclick="if(window.applyCategoryFilter) applyCategoryFilter('all')">All Projects</a></li>
+<li><a data-i18n="common.footer.businessWebsites" href="./project.html?filter=business" onclick="if(window.applyCategoryFilter) applyCategoryFilter('business')">Business Websites</a></li>
+<li><a data-i18n="common.footer.personalWebsites" href="./project.html?filter=personal" onclick="if(window.applyCategoryFilter) applyCategoryFilter('personal')">Personal Websites</a></li>
+<li><a data-i18n="common.footer.portfolioWebsites" href="./project.html?filter=portfolio" onclick="if(window.applyCategoryFilter) applyCategoryFilter('portfolio')">Portfolio Websites</a></li>
+<li><a data-i18n="common.footer.landingPages" href="./project.html?filter=landing" onclick="if(window.applyCategoryFilter) applyCategoryFilter('landing')">Landing Pages</a></li>
+<li><a data-i18n="common.footer.websiteRedesign" href="./project.html?filter=others" onclick="if(window.applyCategoryFilter) applyCategoryFilter('others')">Website Redesign</a></li>
+<li><a data-i18n="common.footer.ecommerceWebsites" href="./project.html?filter=others" onclick="if(window.applyCategoryFilter) applyCategoryFilter('others')">E-commerce Websites</a></li>
+<li><a data-i18n="common.footer.others" href="./project.html?filter=others" onclick="if(window.applyCategoryFilter) applyCategoryFilter('others')">Others</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4 data-i18n="common.footer.contactMeTitle">Contact Me</h4>
+<ul class="contact-list">
+<li><i class="fa-solid fa-phone"></i> +91 9105523282</li>
+<li><i class="fa-regular fa-envelope"></i> singh2005munendra@gmail.com</li>
+<li><i class="fa-solid fa-location-dot"></i> India</li>
+<li><i class="fa-brands fa-whatsapp"></i> <a data-i18n="common.footer.chatWhatsApp" href="https://wa.me/919105523282" style="color: #3b82f6 !important;" target="_blank">Chat on WhatsApp</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p data-i18n="common.footer.copyright">© 2025 Munendra Singh. All rights reserved.</p>
+<div class="footer-bottom-links">
+<a data-i18n="common.footer.privacyPolicy" href="./Privacy.html" style="color: #94a3b8;">Privacy Policy</a>
+<span>|</span>
+<a data-i18n="common.footer.termsConditions" href="./Privacy.html" style="color: #94a3b8;">Terms &amp; Conditions</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- SCROLL TO TOP BUTTON -->
+<button aria-label="Scroll to top" id="scrollTopBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- Script Files -->
+
+<script src="../js/dictionary/english.js" defer></script><script src="../js/dictionary/hindi.js" defer></script><script src="../js/dictionary/hinglish.js" defer></script><script src="../js/language.js" defer></script><script src="../js/master.js" defer></script><script src="../js/projects.js" defer></script><script src="../js/mobile-nav.js" defer></script></body>
+</html>
