@@ -61,6 +61,17 @@
 
         document.body.appendChild(moreMenu);
         document.body.appendChild(nav);
+        document.body.classList.add('has-bottom-nav');
+
+        const updateNavHeight = () => {
+            const h = nav.getBoundingClientRect().height || nav.offsetHeight || 64;
+            if (h > 0) {
+                document.documentElement.style.setProperty('--mobile-nav-height', `${h}px`);
+            }
+        };
+        updateNavHeight();
+        window.addEventListener('resize', updateNavHeight);
+        window.addEventListener('orientationchange', () => setTimeout(updateNavHeight, 100));
 
         // 3. Mark active state based on current URL
         const pathLower = currentPath.toLowerCase();
@@ -150,10 +161,12 @@
             if (currentScrollY <= 0 || goingUp) {
                 header.classList.remove('nav-hidden');
                 nav.classList.remove('mobile-nav-hidden');
+                document.body.classList.remove('mobile-nav-hidden');
                 closeMore();
             } else if (goingDown && currentScrollY > 60) {
                 header.classList.add('nav-hidden');
                 nav.classList.add('mobile-nav-hidden');
+                document.body.classList.add('mobile-nav-hidden');
                 closeMore();
             }
 
